@@ -24,3 +24,30 @@ bash: cd: Hello.class: No such file or directory
 I am currently in the home directory. When running cd with a file argument, you get an error message back saying that there is no such 
 file or directory. Although you may have a file with the name you put, when using cd, you are trying to change the directory you
 are in so using a file argument will not work.
+
+## ls commands:
+```
+[user@sahara ~]$ ls
+**lecture1**
+```
+I am currently in the home directory. When running ls with no arguments your output is the folders that are in the main home directory.
+In the home directory, there is only one folder, lecture1, so that is what is printed out. This output is not an error.
+
+```
+[user@sahara ~]$ ls lecture1/
+Hello.class Hello.java **lecture1** README
+```
+I am currently in the home directory. When running ls with a directory as an argument, your output is the folders and files that reside
+in the directory that is your argument. This output is not an error.
+
+```
+[user@sahara ~]$ ls Hello.class
+ls: cannot access 'Hello.class': No such file or directory
+```
+write
+
+## cat commands:
+```
+[user@sahara ~]$ cat
+
+
