@@ -1,6 +1,6 @@
 # Lab 1 Report
----
-cd commands:
+
+## cd commands:
 ```
 [user@sahara ~]$ cd
 ```
@@ -13,9 +13,14 @@ Having no output in this case is not an error.
 [user@sahara ~]$ cd lecture1
 [user@sahara ~/lecture1]$
 ```
-For cd with one argument, there is no specific output however, the beginning of the terminal line changes to show you that you are
+For cd with a directory argument, there is no specific output however, the beginning of the terminal line changes to show you that you are
 now in the lecture1 directory. When the command was first run, I was in the home directory, and after running I was in the lecture1 directory.
 The output is not an error.
 
 ```
-[user@sahara ~]$ cd 
+[user@sahara ~]$ cd Hello.class
+bash: cd: Hello.class: No such file or directory
+```
+I am currently in the home directory. When running cd with a file argument, you get an error message back saying that there is no such 
+file or directory. Although you may have a file with the name you put, when using cd, you are trying to change the directory you
+are in so using a file argument will not work.
