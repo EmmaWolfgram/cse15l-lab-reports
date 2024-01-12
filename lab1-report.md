@@ -3,11 +3,15 @@
 ## cd commands:
 ```
 [user@sahara ~]$ cd
+[user@sahara ~]$
 ```
-no output, when running this command the user is in the home directory
+no output, when running this command the user is in the home directory.
 There is no output for running cd with no arguments because when running cd you are changing the directory you are in.
 With being in the home directory and then running cd, you are not changing the directory because you are already in the first directory.
 Having no output in this case is not an error.
+
+putting you back to the home directory
+There is no obvious output, in this case, when running cd with no arguments because when running with no argument cd just puts you back to the home directory.
 
 ```
 [user@sahara ~]$ cd lecture1
