@@ -22,13 +22,13 @@ I am currently in the home directory. When running `cd` with a file argument, yo
 ## `ls` commands:
 ```
 [user@sahara ~]$ ls
-**lecture1**
+lecture1
 ```
 I am currently in the home directory. When running `ls` with no arguments your output is the folders that are in the directory you are currently in. In this case, in the home directory, there is only one folder, lecture1, so that is what is printed out. This output is not an error.
 
 ```
 [user@sahara ~]$ ls lecture1/
-Hello.class Hello.java **messages** README
+Hello.class Hello.java messages README
 ```
 I am currently in the home directory. When running `ls` with a directory as an argument, the output is the folders and files that reside in the directory that is your argument. This output is not an error.
 
