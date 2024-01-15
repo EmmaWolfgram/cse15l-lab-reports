@@ -2,10 +2,10 @@
 
 ## `cd` commands:
 ```
-[user@sahara ~]$ cd
+[user@sahara ~/lecture1]$ cd
 [user@sahara ~]$
 ```
-There is no obvious output when running `cd` with no arguments because when running with no argument you are just put back into the home directory. By starting in the home directory and then running `cd`, you are not changing into any directory, you just remain in the home directory. This output is not an error.
+There is no obvious output when running `cd` with no arguments because when running with no argument you are just put back into the home directory. By starting in the lecture1 directory and then running `cd`, you are changing your directory back into the home directory. this output is not an error.
 
 ```
 [user@sahara ~]$ cd lecture1
