@@ -2,6 +2,48 @@
 
 ## Part 1
 
+```
+import java.io.IOException;
+import java.net.URI;
+
+class ChatHandler implements URLHandler {
+  String lines = "";
+
+  public String handleRequest(URI url) {
+    ///add-message?s=<string>&user=<string>
+    String query = url.getQuery();
+    if(url.getPath().equals("/add-message")) {
+      String userName = "";
+      String message = "";
+
+      String userString = query.split("&")[1];
+      if(userString.startsWith("user=")){
+        userName = userString.split("=")[1];
+      }
+      String messageString = query.split("&")[0];
+      if(messageString.startsWith("s=")){
+        message = messageString.split("=")[1];
+      }
+      String fullMessage = userName + ": " + message;
+      lines = lines + fullMessage + "\n";
+      return lines;
+    }
+    return "this url needs a /add-message path";
+  }
+}
+
+class ChatServer {
+  public static void main(String[] args) throws IOException {
+    if(args.length == 0){
+      System.out.println("Missing port number!");
+      return;
+    }
+    int port = Integer.parseInt(args[0]);
+    Server.start(port, new ChatHandler());
+  }
+}
+```
+
 ![Image](cse15l ss 1.png)
 **Which methods in your code are called?**
 
