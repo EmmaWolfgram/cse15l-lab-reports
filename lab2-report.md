@@ -2,6 +2,7 @@
 
 ## Part 1
 
+### Code for ChatServer
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -10,7 +11,7 @@ class ChatHandler implements URLHandler {
   String lines = "";
 
   public String handleRequest(URI url) {
-    ///add-message?s=<string>&user=<string>
+    //add-message?s=<string>&user=<string>
     String query = url.getQuery();
     if(url.getPath().equals("/add-message")) {
       String userName = "";
@@ -44,15 +45,16 @@ class ChatServer {
 }
 ```
 
+### Chat Server Running
 ![Image](cse15l ss 1.png)
-**Which methods in your code are called?**
+**Which methods in your code are called?** When the code is compiled and run, both the main method and the handleRequest method are called on.
 
-**What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
+**What are the relevant arguments to those methods, and the values of any relevant fields of the class?** In the main method, the code checks for an argument that corresponds to the port number for the server. If there is no port number then an error message is received. When there is a port number, the main method parses it into an integer and uses the port number to start the server (in this case the part number is 6968). In the handleRequest method, the url argument is used to take the url of the server so that we can use it throughout the rest of the method body to declare certain actions. 
 
 **How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
 
 ![Image](cse15l ss 2.png)
-**Which methods in your code are called?**
+**Which methods in your code are called?** When the code is compiled and run, both the main method and the handleRequest method are called on.
 
 **What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
 
