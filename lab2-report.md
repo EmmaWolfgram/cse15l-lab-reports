@@ -78,12 +78,10 @@ class ChatServer {
 Using the command line, show with ls and take screenshots of:
 
 **The absolute path to the private key for your SSH key for logging into ieng6:**
+![Image](priv key.png)
 
-
-**The absolute path to the public key for your SSH key for logging into ieng6:** (this is the one you copied to your account on ieng6, so it should be a path on ieng6's file system)
-![Image](cse15l privkey.png)
-
-/c/Users/emma2/.ssh/id_ed25519.pub
+**The absolute path to the public key for your SSH key for logging into ieng6:**
+![Image](cse 15l public key.png)
 
 **A terminal interaction where you log into your ieng6 account without being asked for a password:**
 ![Image](cse15l ssh-witho-pass.png)
