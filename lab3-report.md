@@ -1,6 +1,6 @@
-## Lab 3 Report - Bugs and Commands (Week 5)
+# Lab 3 Report - Bugs and Commands (Week 5)
 
-# Part 1 - Bugs
+## Part 1 - Bugs
 
 Choose one of the bugs from week 4's lab.
 
@@ -13,7 +13,7 @@ Provide:
 
 Briefly describe why the fix addresses the issue.
 
-# Part 2 - Researching Commands
+## Part 2 - Researching Commands
 
 Consider the commands less, find, and grep. Choose one of them.
 
