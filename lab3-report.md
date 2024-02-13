@@ -52,7 +52,8 @@ static int[] reversed(int[] arr) {
 
 **GREP**
 
-1. grep -n: displays the matched lines and the line numbers that the pattern appears on
+**1. grep -n: displays the matched lines and the line numbers that the pattern appears on**
+
 Example 1:
 ```
 emma2@Wolfies-laptop MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
@@ -74,7 +75,8 @@ technical/911report/chapter-13.4.txt:2184:     acclimate the hijackers to the Un
 ```
 In both of these examples, the output provided is just a sample output and not the full list. When `grep -n` is used in the terminal, it takes the input pattern and prints out a list of where that pattern appears in the given files and what line they are on in the file. This command could be useful if you are looking for similar words in a bunch of files or if you are looking for a phrase/word in a specific file.
 
-2. grep -c: prints a count of the lines that match the pattern for each file
+**2. grep -c: prints a count of the lines that match the pattern for each file**
+
 Example 1:
 ```
 emma2@Wolfies-laptop MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
@@ -97,7 +99,8 @@ technical/911report/chapter-9.txt:98
 ```
 In both examples the provided output is not the full printed-out output. When `grep -c` is used in the terminal, it takes the input pattern and prints out a list of how many times that pattern appears in each file that is specified in the command line. This command could be useful to search files and see which file could be most useful when looking at a specific topic or to count how many times the pattern shows up in a group of files. 
 
-3. grep -l: Displays list of a filenames only that contain the pattern
+**3. grep -l: Displays list of a filenames only that contain the pattern**
+
 Example 1:
 ```
 emma2@Wolfies-laptop MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
