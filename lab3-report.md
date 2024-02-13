@@ -147,4 +147,4 @@ $ wc total-apperance.txt
 When `grep -i` is used in the terminal, it takes the input pattern and regardless of capitalization, it prints all the files with a short sentence of where the word appears. This can be useful if you don't know if the word you are looking for is capitalized or not and it could also be useful if you are trying to find how many times the word appears but the word is sometimes capitalized.
 
 [Source 1](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
-[Source](https://docs.rackspace.com/docs/use-the-linux-grep-command)
+[Source 2](https://docs.rackspace.com/docs/use-the-linux-grep-command)
