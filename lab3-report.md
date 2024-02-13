@@ -52,7 +52,7 @@ static int[] reversed(int[] arr) {
 
 **GREP**
 
-**1. grep -n: displays the matched lines and the line numbers that the pattern appears on**
+**1. `grep -n`: displays the matched lines and the line numbers that the pattern appears on**
 
 Example 1:
 ```
@@ -75,7 +75,7 @@ technical/911report/chapter-13.4.txt:2184:     acclimate the hijackers to the Un
 ```
 In both of these examples, the output provided is just a sample output and not the full list. When `grep -n` is used in the terminal, it takes the input pattern and prints out a list of where that pattern appears in the given files and what line they are on in the file. This command could be useful if you are looking for similar words in a bunch of files or if you are looking for a phrase/word in a specific file.
 
-**2. grep -c: prints a count of the lines that match the pattern for each file**
+**2. `grep -c`: prints a count of the lines that match the pattern for each file**
 
 Example 1:
 ```
@@ -99,7 +99,7 @@ technical/911report/chapter-9.txt:98
 ```
 In both examples the provided output is not the full printed-out output. When `grep -c` is used in the terminal, it takes the input pattern and prints out a list of how many times that pattern appears in each file that is specified in the command line. This command could be useful to search files and see which file could be most useful when looking at a specific topic or to count how many times the pattern shows up in a group of files. 
 
-**3. grep -l: Displays list of a filenames only that contain the pattern**
+**3. `grep -l`: Displays list of a filenames only that contain the pattern**
 
 Example 1:
 ```
@@ -118,7 +118,8 @@ $ wc all-biolog-files.txt
 ```
 When `grep -l` is used in the terminal, it takes the input pattern and prints out a list of all the files that contain the pattern. This command could be useful to find files about specific topics in a large directory of files or to go further and count how many files contain the pattern.
 
-4. grep -i: print lines with matching criteria while ignoring upper and lowercasing
+**4. `grep -i`: print lines with matching criteria while ignoring upper and lowercasing**
+
 Example 1:
 ```
 emma2@Wolfies-laptop MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
@@ -145,5 +146,5 @@ $ wc total-apperance.txt
 ```
 When `grep -i` is used in the terminal, it takes the input pattern and regardless of capitalization, it prints all the files with a short sentence of where the word appears. This can be useful if you don't know if the word you are looking for is capitalized or not and it could also be useful if you are trying to find how many times the word appears but the word is sometimes capitalized.
 
-[URL](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
-[URL](https://docs.rackspace.com/docs/use-the-linux-grep-command)
+[Source 1](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+[Source](https://docs.rackspace.com/docs/use-the-linux-grep-command)
