@@ -2,16 +2,47 @@
 
 ## Part 1 - Bugs
 
-Choose one of the bugs from week 4's lab.
+Chosen bug: static int[] reversed(int[] arr)
 
-Provide:
-
-1. A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
-2. An input that doesn't induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
+1. A failure-inducing input for the buggy program, as a JUnit test and any associated code
+```
+@Test
+public void testReversedFailOnGoodImple() {
+  int[] intput1 = {1, 2, 3};
+  assertArrayEquals(new int[]{3, 2, 1}, ArrayExamples.reversed(input1));
+```
+2. An input that doesn't induce a failure, as a JUnit test and any associated code
+```
+@Test
+public void testReversedPassOnBadImple() {
+  int[] input1 = {0, 0, 0};
+  assertArrayEquals(new int[]{0, 0, 0}, ArrayExamples.reversed(input1));
+```
 3. The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
-4. The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
-
-Briefly describe why the fix addresses the issue.
+![Image](failOnGood.png)
+![Image](passOnBad.png)
+5. The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
+Before
+```
+static int[] reversed(int[] arr) {
+  int[] newArray = new int[arr.length];
+  for(int i = 0; i < arr.length; i += 1) {
+    arr[i] = newArray[arr.length - i - 1];
+  }
+  return arr;
+}
+```
+After
+```
+static int[] reversed(int[] arr) {
+  int[] newArray = new int[arr.length];
+  for(int i = 0; i < arr.length; i += 1) {
+    newArray[i] = arr[arr.length - i - 1];
+  }
+  return newArray;
+}
+```
+**Why does this fix the issue?** In this code, the broken line appears inside the for loop. This method is supposed to copy over elements from one array into a new array but in reverse order. In the broken code, when the elements are copied over, it is putting elements from the new array into the old array. When the new array is created, all the values are defaulted to zero, so when the method runs, all the values in the array are switched to values from the new array which are all zeros. The code after fixes this issue by copying the old array values into the new array in reverse order.
 
 ## Part 2 - Researching Commands
 
