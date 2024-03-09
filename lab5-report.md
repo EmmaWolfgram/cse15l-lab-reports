@@ -4,8 +4,8 @@
 
 Design a debugging scenario, and write your report as a conversation on EdStem. It should have:
 
-###1. The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some
-   sense of what the failure-inducing input is. (Don't actually make the post! Just write the content that would go in such a post)
+**1. The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some
+   sense of what the failure-inducing input is. (Don't actually make the post! Just write the content that would go in such a post)**
 
    Hello! I am writing the grade script for the list examples and I am getting some errors I don't really know how to go about fixing.
    When I run one of the repos that has failures, I get the correct output: ![Image](working bash script.png)
@@ -20,11 +20,11 @@ Design a debugging scenario, and write your report as a conversation on EdStem. 
    says "OK" in it somewhere because I believe that is produced every time successful code is run, however, I do not really know how to go about
    this without causing the current code to break and stop producing the correct output for the repo that has failures. Thank you for any advice!
    
-3. A response from a TA asking a leading question or suggesting a command to try (To be clear, you are mimicking a TA here.)
+**2. A response from a TA asking a leading question or suggesting a command to try (To be clear, you are mimicking a TA here.)**
 
-4. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
+**3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.**
 
-5. At the end, all the information needed about the setup including:
+**4. At the end, all the information needed about the setup including:**
 The file & directory structure needed:
 The contents of each file before fixing the bug:
 The full command line (or lines) you ran to trigger the bug:
