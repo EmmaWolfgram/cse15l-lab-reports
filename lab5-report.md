@@ -6,9 +6,12 @@ Design a debugging scenario, and write your report as a conversation on EdStem. 
 
 1. The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some
    sense of what the failure-inducing input is. (Don't actually make the post! Just write the content that would go in such a post)
+
    Hello! I am writing the grade script for the list examples and I am getting some errors I don't really know how to go about fixing.
    When I run one of the repos that has failures, I get the correct output: ![Image](working bash script.png)
+
    However when I then run the repo that is successful, as in has no errors I do not get the correct output: ![Image](failing grade script.png)
+
    From looking at the junit output text file I feel like that is why this is not working however, I do not know how to go about fixing it.
    ![Image](working code output.png) ![Image](failing code output.png)
    From the first image, I can see how the script is getting the numbers to produce the grade correctly, however with the passing repo, it does not
