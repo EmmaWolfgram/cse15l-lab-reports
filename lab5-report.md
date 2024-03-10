@@ -2,10 +2,8 @@
 
 ## Part 1 – Debugging Scenario
 
-Design a debugging scenario, and write your report as a conversation on EdStem. It should have:
-
 **1. The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some
-   sense of what the failure-inducing input is. (Don't actually make the post! Just write the content that would go in such a post)**
+   sense of what the failure-inducing input is.**
 
    Hello! I am writing the grade script for the list examples and I am getting some errors I don't really know how to go about fixing.
    When I run one of the repos that has failures, I get the correct output: ![Image](working bash script.png)
@@ -28,17 +26,22 @@ From what I see you are on the right track. Think about creating other branches 
 
 The bug that was in the code was that there was no case to handle the possibility of all the test cases passing. If you just used the original code it would not work because of the differing JUnit outputs from whether the code was successful or not. By handling the separate cases and determining whether the code passes or not, you can create a grade script that accounts for both these cases.
 
-Output in terminal after fixing: ![Image](still-passing-script.png) ![Image](now-passing-script.png)
-Fixed code: ![Image](fixed-code.png)
+Output in terminal after fixing: 
+![Image](still-passing-script.png) ![Image](now-passing-script.png)
+
+Fixed code: 
+![Image](fixed-code.png)
 
 **4. At the end, all the information needed about the setup including:**
 
 **The file & directory structure needed:** 
+
 ![Image](directories+files.png)
 
 **The contents of each file before fixing the bug:**
 
-beginning code: ![Image](current script.png)
+beginning code: 
+![Image](current script.png)
 
 **The full command line (or lines) you ran to trigger the bug:**
 
