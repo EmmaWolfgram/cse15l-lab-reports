@@ -22,9 +22,14 @@ Design a debugging scenario, and write your report as a conversation on EdStem. 
    
 **2. A response from a TA asking a leading question or suggesting a command to try**
 
-From what I see you are on the right track. Think about creating another branch of your code
+From what I see you are on the right track. Think about creating other branches of your code that looks at what the contents are on the last line of the JUnit output. From there you can decide what should go in each branch to produce the correct output.
 
 **3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.**
+
+The bug that was in the code was that there was no case to handle the possibility of all the test cases passing. If you just used the original code it would not work because of the differing JUnit outputs from whether the code was successful or not. By handling the separate cases and determining whether the code passes or not, you can create a grade script that accounts for both these cases.
+
+Output in terminal after fixing: ![Image](still-passing-script.png) ![Image](now-passing-script.png)
+Fixed code: ![Image](fixed-code.png)
 
 **4. At the end, all the information needed about the setup including:**
 
@@ -41,4 +46,6 @@ successful command: `$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-met
 failure-inducing command: `$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`
 
 **A description of what to edit to fix the bug:**
+
+To fix this bug I created an if-else statement that handled different cases. In the if branch I had it handle the case where the code in the repo fails and the JUnit output results in failure. From there, it takes the failures and tells you what your score is by subtracting the number of tests from the number of failures the code has. In the elif branch, I had it handle the case where if the code in the repo was passing, it got the number of tests from the last line and used that to output that the repo was successful and that the repo got a perfect score. 
 
