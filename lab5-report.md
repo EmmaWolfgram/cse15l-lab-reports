@@ -27,9 +27,11 @@ From what I see you are on the right track. Think about creating other branches 
 The bug that was in the code was that there was no case to handle the possibility of all the test cases passing. If you just used the original code it would not work because of the differing JUnit outputs from whether the code was successful or not. By handling the separate cases and determining whether the code passes or not, you can create a grade script that accounts for both these cases.
 
 Output in terminal after fixing: 
+
 ![Image](still-passing-script.png) ![Image](now-passing-script.png)
 
 Fixed code: 
+
 ![Image](fixed-code.png)
 
 **4. At the end, all the information needed about the setup including:**
@@ -41,6 +43,7 @@ Fixed code:
 **The contents of each file before fixing the bug:**
 
 beginning code: 
+
 ![Image](current script.png)
 
 **The full command line (or lines) you ran to trigger the bug:**
