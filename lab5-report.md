@@ -55,3 +55,7 @@ failure-inducing command: `$ bash grade.sh https://github.com/ucsd-cse15l-f22/li
 
 To fix this bug I created an if-else statement that handled different cases. In the if branch I had it handle the case where the code in the repo fails and the JUnit output results in failure. From there, it takes the failures and tells you what your score is by subtracting the number of tests from the number of failures the code has. In the elif branch, I had it handle the case where if the code in the repo was passing, it got the number of tests from the last line and used that to output that the repo was successful and that the repo got a perfect score. 
 
+
+## Part 2 – Reflection
+In the second half of this quarter, from lab, I have learned about bash and how to write scripts. This has honestly been kind of interesting to me since it is kind of like Java but also kind of like its own language. I have actually implemented some of my own scripts for CSE12 so that I can just run a bash command to compile, test, and check my style on my PAs instead of running multiple different commands repeatedly. 
+
