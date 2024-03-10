@@ -20,18 +20,23 @@ Design a debugging scenario, and write your report as a conversation on EdStem. 
    says "OK" in it somewhere because I believe that is produced every time successful code is run, however, I do not really know how to go about
    this without causing the current code to break and stop producing the correct output for the repo that has failures. Thank you for any advice!
    
-**2. A response from a TA asking a leading question or suggesting a command to try (To be clear, you are mimicking a TA here.)**
+**2. A response from a TA asking a leading question or suggesting a command to try**
+
+From what I see you are on the right track. Think about creating another branch of your code
 
 **3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.**
 
 **4. At the end, all the information needed about the setup including:**
 
-**The file & directory structure needed:** ![Image](directories+files.png)
+**The file & directory structure needed:** 
+![Image](directories+files.png)
 
 **The contents of each file before fixing the bug:**
+
 beginning code: ![Image](current script.png)
 
 **The full command line (or lines) you ran to trigger the bug:**
+
 successful command: `$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3`
 failure-inducing command: `$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`
 
