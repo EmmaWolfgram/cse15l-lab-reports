@@ -49,6 +49,7 @@ beginning code:
 **The full command line (or lines) you ran to trigger the bug:**
 
 successful command: `$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3`
+
 failure-inducing command: `$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`
 
 **A description of what to edit to fix the bug:**
