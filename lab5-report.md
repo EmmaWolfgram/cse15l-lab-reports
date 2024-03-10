@@ -25,14 +25,15 @@ Design a debugging scenario, and write your report as a conversation on EdStem. 
 **3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.**
 
 **4. At the end, all the information needed about the setup including:**
-The file & directory structure needed:
-The contents of each file before fixing the bug:
-The full command line (or lines) you ran to trigger the bug:
-A description of what to edit to fix the bug:
 
-You should actually set up and run the scenario from your screenshots. 
-It should involve at least a Java file and a bash script. Describing the bug 
-should involve reading some output at the terminal resulting from running one 
-or more commands. Design an error that produces more interesting output than a 
-single message about a syntax or unbound identifier error – showcase some interesting wrong behavior! 
-Feel free to set this up by cloning and breaking some existing code like the grading script or code from class, or by designing something of your own from scratch, etc.
+**The file & directory structure needed:** ![Image](directories+files.png)
+
+**The contents of each file before fixing the bug:**
+beginning code: ![Image](current script.png)
+
+**The full command line (or lines) you ran to trigger the bug:**
+successful command: `$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3`
+failure-inducing command: `$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`
+
+**A description of what to edit to fix the bug:**
+
